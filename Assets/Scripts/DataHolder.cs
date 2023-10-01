@@ -16,7 +16,8 @@ public class DataHolder
         Debug.Log("Health currently at: " + health);
     }
     public static void gainEnergy(){
-        energy+=10;
+        energy += 10;
+        if(energy > 200){energy = 200;}
         numMana--;
         Debug.Log("Energy currently at: " + energy);
     }
