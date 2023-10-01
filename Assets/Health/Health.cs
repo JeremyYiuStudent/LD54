@@ -20,4 +20,10 @@ public class Health : MonoBehaviour
     {
         FillImage.fillAmount = CurrentHealth/100;
     }
+
+     public void ReduceHP(int x)
+    {
+        FillImage.fillAmount = (CurrentHealth - x) / 100;
+    }
+
 }
