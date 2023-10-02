@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ManaController : MonoBehaviour
 {
-    void OnCollisionEnter(Collision c){
+    void OnTriggerEnter(Collider c){
         DataHolder.gainEnergy();
         Destroy(this.gameObject);
     }

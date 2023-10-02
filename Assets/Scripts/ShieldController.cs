@@ -13,7 +13,6 @@ public class ShieldController : MonoBehaviour
             DataHolder.energy--;
             shieldCount = false;
             StartCoroutine(countDownShield());
-            Debug.Log("Energy is at: " + DataHolder.energy);
         }
         if(DataHolder.energy == 0){
             shield.SetActive(false);
